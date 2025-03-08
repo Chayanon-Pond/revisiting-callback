@@ -7,7 +7,29 @@
 */
 
 // Start Coding Here
+function calculate (x,y,callback) {
+    return callback(x,y)
 
+}
+function add(x,y) {
+    return x+y
+    
+}
+function subtract(x,y) {
+    return x-y
+    
+}
+function multiply(x,y) {
+    return x*y
+    
+}
+function divide(x,y) {
+    if (y === 0) {
+        return "Cannot divide by zero";
+    }
+    return x / y;
+    
+}
 
 // เมื่อ function นี้ทำงานจะเห็นผลลัพธ์ดังนี้
 console.log(calculate(10, 5, add)); // 15
